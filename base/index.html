@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background: #ddd;
+        }
+        #canvas{
+            border: thin inset #aaa;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <canvas id='canvas' width='600' height='300'>
+        canvas not supported
+    </canvas>
+    <script>
+        var canvas = document.getElementById('canvas')
+        var context = canvas.getContext('2d')
+        
+        context.font='38pt Arial'
+        context.fillStyle='cornflowerblue'
+        context.strokeStyle='blue';
+        context.fillText('Hello Canvas',canvas.width/2-150,canvas.height/2+15);        
+        context.strokeText('Hello Canvas',canvas.width/2-150,canvas.height/2+15);
+        
+        
+    </script>
+</body>
+</html>
